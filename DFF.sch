@@ -13,9 +13,11 @@ BEGIN SCHEMATIC
         SIGNAL clk
         SIGNAL XLXN_8
         SIGNAL XLXN_2
+        SIGNAL XLXN_10
         SIGNAL XLXN_3
         SIGNAL XLXN_12
         SIGNAL XLXN_13
+        SIGNAL XLXN_14
         SIGNAL XLXN_15
         SIGNAL XLXN_16
         SIGNAL Q
