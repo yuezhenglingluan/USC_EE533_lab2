@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : DFF.vf
+// /___/   /\     Timestamp : 01/22/2025 05:39:58
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/8bit_adder/DFF.sch" DFF.vf
+//Design Name: DFF
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module DFF(clk, 
+           D, 
+           Q, 
+           Q_bar);
+
+    input clk;
+    input D;
+   output Q;
+   output Q_bar;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_8;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire Q_DUMMY;
+   wire Q_bar_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Q_bar = Q_bar_DUMMY;
+   INV XLXI_1 (.I(clk), 
+               .O(XLXN_5));
+   INV XLXI_2 (.I(XLXN_5), 
+               .O(XLXN_12));
+   INV XLXI_3 (.I(D), 
+               .O(XLXN_4));
+   NAND2 XLXI_4 (.I0(XLXN_5), 
+                 .I1(D), 
+                 .O(XLXN_1));
+   NAND2 XLXI_5 (.I0(XLXN_4), 
+                 .I1(XLXN_5), 
+                 .O(XLXN_8));
+   NAND2 XLXI_6 (.I0(XLXN_2), 
+                 .I1(XLXN_1), 
+                 .O(XLXN_3));
+   NAND2 XLXI_7 (.I0(XLXN_8), 
+                 .I1(XLXN_3), 
+                 .O(XLXN_2));
+   NAND2 XLXI_8 (.I0(XLXN_12), 
+                 .I1(XLXN_3), 
+                 .O(XLXN_15));
+   NAND2 XLXI_9 (.I0(XLXN_13), 
+                 .I1(XLXN_12), 
+                 .O(XLXN_16));
+   NAND2 XLXI_10 (.I0(Q_bar_DUMMY), 
+                  .I1(XLXN_15), 
+                  .O(Q_DUMMY));
+   NAND2 XLXI_11 (.I0(XLXN_16), 
+                  .I1(Q_DUMMY), 
+                  .O(Q_bar_DUMMY));
+   INV XLXI_12 (.I(XLXN_3), 
+                .O(XLXN_13));
+endmodule
