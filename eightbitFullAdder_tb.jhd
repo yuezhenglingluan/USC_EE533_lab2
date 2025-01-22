@@ -1,3 +1,0 @@
-MODULE eightbitFullAdder_tb
-SUBMODULE EightBitFA
-INSTANCE UUT

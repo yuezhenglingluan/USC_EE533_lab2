@@ -1,3 +1,0 @@
-verilog work "OneBitFullAdder.vf"
-verilog work "DFF.vf"
-verilog verilog "EightBitFA_tb.v"
