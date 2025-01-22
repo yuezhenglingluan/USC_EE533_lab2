@@ -47,5 +47,5 @@ module EightBitFA_tb;
 		
 		#500 $finish;
 	end
-	initial $monitor($time,"%d %d %d %b %b %b",A,B,Sum,Cin,Cout, clk);
+	// initial $monitor($time,"%d %d %d %b %b %b",A,B,Sum,Cin,Cout, clk);
   endmodule
