@@ -1,0 +1,38 @@
+Command line:
+   ./OneBitFullAdder_tb_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1274
+
+Wed Jan 22 12:56:55 2025
+
+Total Line Count : 23
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 141.418 Meg
+
+ Total Signals          : 38
+ Total Nets             : 17
+ Total Signal Drivers   : 12
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 15
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 99
+ntrace select -o on -n /OneBitFullAdder_tb/S 
+ntrace select -o on -n /OneBitFullAdder_tb/CO 
+ntrace select -o on -n /OneBitFullAdder_tb/A 
+ntrace select -o on -n /OneBitFullAdder_tb/B 
+ntrace select -o on -n /OneBitFullAdder_tb/C 
+ntrace start 
+isimrun 10000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 150.921 Meg
+
+Wed Jan 22 12:57:41 2025
+

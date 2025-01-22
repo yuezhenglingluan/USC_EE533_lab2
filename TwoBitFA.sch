@@ -10,17 +10,12 @@ BEGIN SCHEMATIC
         SIGNAL XLXN_2
         SIGNAL XLXN_3
         SIGNAL XLXN_4
-        SIGNAL XLXN_5
         SIGNAL clk
         SIGNAL XLXN_7
         SIGNAL XLXN_8
         SIGNAL XLXN_9
         SIGNAL XLXN_10
         SIGNAL XLXN_11
-        SIGNAL XLXN_12
-        SIGNAL XLXN_13
-        SIGNAL XLXN_14
-        SIGNAL XLXN_15
         SIGNAL Cout
         SIGNAL S(1:0)
         SIGNAL S(1)
@@ -251,6 +246,7 @@ BEGIN SCHEMATIC
         BUSTAP 176 960 272 960
         BEGIN BRANCH B(1)
             WIRE 272 960 320 960
+            WIRE 320 960 320 960
             WIRE 320 960 384 960
             BEGIN DISPLAY 328 960 ATTR Name
                 ALIGNMENT SOFT-BCENTER
@@ -259,6 +255,7 @@ BEGIN SCHEMATIC
         BUSTAP 176 784 272 784
         BEGIN BRANCH B(0)
             WIRE 272 784 320 784
+            WIRE 320 784 320 784
             WIRE 320 784 384 784
             BEGIN DISPLAY 328 784 ATTR Name
                 ALIGNMENT SOFT-BCENTER
